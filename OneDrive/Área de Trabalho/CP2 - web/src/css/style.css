@@ -1,0 +1,160 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #60a5fa;
+  --accent2: #7c3aed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Cabeçalho */
+.site-header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.tag {
+  margin-top: 4px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* Campo de busca (decorativo) */
+.search-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-area input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: var(--card);
+  color: var(--muted);
+}
+
+.note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* Seção de jogos */
+.games-section h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+/* Grid de jogos */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+/* Cartões */
+.game-card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(96, 165, 250, 0.3);
+}
+
+.thumb {
+  height: 120px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+img {
+  height: 110px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.genre {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.price {
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+/* Botão */
+.btn {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Rodapé */
+.site-footer {
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+  border-top: 1px solid #1e293b;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .site-header h1 {
+    font-size: 22px;
+  }
+
+  .games-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
