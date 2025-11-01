@@ -339,11 +339,16 @@ h3 {
   text-shadow: 0 0 8px rgba(70, 122, 187, 0.5);
   margin: 0;
 }
-    
+
 .site-header .tag {
   font-family: "Orbitron", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #d1d5db;
   letter-spacing: 1px;
+}
+
+body.dark {
+  background: #111;
+  color: #eee;
 }
