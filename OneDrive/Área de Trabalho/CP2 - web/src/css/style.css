@@ -528,3 +528,252 @@ body.dark {
     gap: 10px;
   }
 }
+
+/* ===================== FORMULÁRIO - ESTILO RESPawn ===================== */
+
+.form-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: #111827; /* fundo escuro */
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(96, 165, 250, 0.4);
+  color: #e5e7eb;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.form-container h1 {
+  color: #60a5fa;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.6);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  color: #60a5fa;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px rgba(96, 165, 250, 0.4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #d1d5db;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  color: #f9fafb;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 6px rgba(96, 165, 250, 0.5);
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #60a5fa;
+  border: none;
+  border-radius: 8px;
+  color: #111827;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+  transform: scale(1.03);
+}
+
+.required::after {
+  content: " *";
+  color: #ef4444;
+  font-weight: bold;
+}
+
+/* ===================== RESPONSIVIDADE ===================== */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-container h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===== Slideshow ===== */
+.slideshow-container {
+  max-width: 350px;
+  margin: 60px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.6);
+  background-color: #111827;
+  position: relative;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 450px; /* altura ajustável */
+  object-fit: contain; /* garante que a imagem inteira seja exibida */
+  border-radius: 12px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.95;
+}
+
+.slideshow-container img:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+/* ======= Tabela de Recompensas (Quiz) ======= */
+.reward-table {
+  margin: 40px auto;
+  max-width: 800px;
+  background-color: #111827;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
+  color: #e5e7eb;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.reward-table h3 {
+  color: #60a5fa;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(96, 165, 250, 0.7);
+}
+
+.reward-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reward-table th, 
+.reward-table td {
+  border: 1px solid #374151;
+  padding: 12px;
+}
+
+.reward-table th {
+  background-color: #1f2937;
+  color: #60a5fa;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reward-table tr:nth-child(even) {
+  background-color: #1e293b;
+}
+
+.reward-table tr:hover {
+  background-color: #374151;
+  transition: 0.3s;
+}
+
+/* === ESTILOS ADICIONAIS DAS NOVAS SEÇÕES === */
+
+.em-breve {
+    margin-top: 60px;
+    text-align: center;
+    color: #d1d5db;
+}
+
+.em-breve h2 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #3b82f6;
+}
+
+.game-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.game-card {
+    background-color: rgba(30, 41, 59, 0.6);
+    border: 1px solid #1e40af;
+    border-radius: 12px;
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #3b82f6;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.reviews {
+    margin-top: 60px;
+    text-align: center;
+    color: #d1d5db;
+}
+
+.reviews h3 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #3b82f6;
+}
+
+.review {
+    background-color: rgba(30, 41, 59, 0.6);
+    border: 1px solid #1e40af;
+    border-radius: 12px;
+    margin: 15px auto;
+    padding: 15px 25px;
+    max-width: 600px;
+    font-style: italic;
+    box-shadow: 0 0 8px #1e3a8a;
+}
+
+.review span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #60a5fa;
+    text-shadow: 0 0 5px #3b82f6;
+}

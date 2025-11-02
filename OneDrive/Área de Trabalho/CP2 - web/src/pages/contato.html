@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Respawn — Detalhes do Jogo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-top">
+      <div class="logo-area">
+        <img src="../assets/punhal.png" alt="Logo Respawn" class="logo">
+        <h1 style="color:#1E3A8A; text-shadow: 0 0 8px #3B82F6, 0 0 16px #1E40AF, 0 0 32px #1D4ED8;">Respawn</h1>
+        <button id="toggle-theme" style="margin-bottom: 15px;">🌙</button>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./novidades.html">Novidades</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+          <li><a href="./quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <p class="tag">Todo gamer merece uma nova chance.</p>
+  </header>
+
+  <main>
+    <!-- Formulário -->
+    <div class="form-container">
+        <h1 style="text-align: center;">Entre em contato conosco!</h1>
+        
+        <form id="vinhariaagnello">
+            <!-- Dados do Chamado -->
+            <div class="section">
+                <div class="section-title">Dados do Chamado</div>
+                
+                <div class="form-group">
+                    <label for="nome" class="required">Digite seu nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outros">Outros</option>
+                        <option value="prefiro_nao_informar">Prefiro não informar</option>
+                    </select>
+                </div>
+
+            <div class="section">
+                <div class="section-title">Solicitante</div>
+                
+                <div class="form-group">
+                    <label for="cliente">Cliente:</label>
+                    <input type="text" id="cliente" name="cliente" placeholder="Nome do cliente">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contato">Contato:</label>
+                    <input type="text" id="contato" name="contato" placeholder="Telefone ou e-mail">
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Dados de Abertura</div>
+                
+                <div class="form-group">
+                    <label for="tipoChamado">Tipo de Chamado:</label>
+                    <select name="tipoChamado" id="tipoChamado">
+                        <option value="">Selecione</option>
+                        <option value="incidente">Incidente</option>
+                        <option value="urgente">Urgente</option>
+                        <option value="requisicao">Requisição</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="">Selecione</option>
+                        <option value="interna">Interna</option>
+                        <option value="externa">Externa</option>
+                        <option value="evento">Evento</option>
+                    </select>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="problema">Descreva seu Problema:</label>
+                    <textarea id="solicitacao" name="solicitacao" rows="4" placeholder="Descreva seu problema com a Respawn"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="severidade">Severidade:</label>
+                    <select name="severidade" id="severidade">
+                        <option value="">Selecione</option>
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+            </div>
+            <a href="/src/pages/chamado.html" style="text-decoration: none;">
+                <button>Enviar</button>
+            </a>
+        </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <div class="footer-logo-area">
+          <img src="../assets/punhal.png" alt="Logo Respawn" class="footer-logo-img">
+          <h2>Respawn</h2>
+        </div>
+        <p>Todo gamer merece uma nova chance.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contato</h3>
+        <ul>
+          <li>📧 <a href="visubraz@gmail.com">visubraz@gmail.com</a></li>
+          <li>📞 <a href="tel:+55(11)947168683">(11) 94716-8683</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Redes Sociais</h3>
+        <div class="social-icons">
+          <a href="#" title="Instagram">📸</a>
+          <a href="#" title="Twitter">🐦</a>
+          <a href="#" title="YouTube">▶️</a>
+          <a href="#" title="Discord">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="ano"></span> Respawn — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/srcipt.js"></script>
+</body>
+</html>
